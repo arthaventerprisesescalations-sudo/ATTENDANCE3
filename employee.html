@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="welcome-message">Welcome, Employee!</h1>
+            <button onclick="logout()">Logout</button>
+        </div>
+        
+        <button id="mark-attendance-btn" onclick="markAttendance()">Mark Today's Attendance</button>
+        <p id="attendance-status" class="status"></p>
+
+        <h2>My Attendance History</h2>
+        <ul id="attendance-history">
+            <!-- History will be populated by JavaScript -->
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
